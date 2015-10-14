@@ -1,1 +1,1 @@
-{"name":"simple-mocks","tagline":"","body":"### \r\n","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
+{"name":"simple-mocks","tagline":"","body":"## Setup\r\n### Setup virtual environment\r\n    $ pip install -r requirements.txt \r\n","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
