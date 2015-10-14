@@ -1,1 +1,1 @@
-# simple-mockup
+# simple-mocks
