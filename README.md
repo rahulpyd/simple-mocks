@@ -13,7 +13,9 @@
     localhost:3000/api/users
 
 ## Adding end-points
-Add end-points on the same lines as the example in *server.py*
+Add end-points on the same lines as the example in `server.py`
+
+Have your data in `.json` file. Here it is `users.json` .
 
     @app.route('/api/users', methods=['GET', 'POST'])
     def mydata_handler():
@@ -28,3 +30,5 @@ Add end-points on the same lines as the example in *server.py*
 
         return Response(json.dumps(users), mimetype='application/json', 
                                         headers={'Cache-Control': 'no-cache'})
+
+
