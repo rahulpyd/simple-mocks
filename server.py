@@ -2,8 +2,7 @@ import json
 import os
 from flask import Flask, Response, request
 
-app = Flask(__name__, static_url_path='', static_folder='public')
-# app.add_url_rule('/', 'root', lambda: app.send_static_file('index.html'))
+app = Flask(__name__)
 
 @app.route('/api/users', methods=['GET', 'POST'])
 def mydata_handler():
@@ -20,4 +19,6 @@ def mydata_handler():
                                         headers={'Cache-Control': 'no-cache'})
 
 if __name__ == '__main__':
-    app.run(port=int(os.environ.get("PORT",3000)))
+    app.run(port=int(os.environ.get("PORT",3000)), 
+            host='0.0.0.0')
+ 
